@@ -1,0 +1,93 @@
+@media screen and (max-width: 600px){
+
+    #hamburger{
+        display: block;
+        position: absolute;
+        top: 0.3rem;
+        left: 0;
+    }
+
+    #nav-title{
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+    
+    #nav-title.active{
+        opacity: 0;
+    }
+
+    #navigation.active{
+        box-shadow: none;
+    }
+
+    #nav-menu {
+        z-index: -1;
+        position: fixed;
+        top: -100%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        opacity: 0;
+        box-shadow: 0px 0.3em 0.5em rgba(0, 0, 0, 0.3);
+    }
+
+    #nav-menu.active {
+        top: 3rem;
+        opacity: 1;
+    }
+
+
+    .nav-item{
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #top {
+        display: flex;
+        background: rgba(0, 0, 0, 0.6);
+        background-size: cover;
+        height: 35vh;
+    }
+
+    #top::before{
+        content: "";
+        background: url("https://source.unsplash.com/1024x500/?smartphone,apps") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 43vh;
+        z-index: -1;
+    }
+
+    #top div{
+        width: 100vw;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top div p{
+        margin: 0;    
+        padding: 0 20px;    
+    }
+
+    #apps h3{
+        padding: 16px;
+    }
+    
+    #horizontal{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-container{
+        flex-direction: column-reverse;
+    }
+}
