@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SK App Development</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navigation" class="navbar">
+            <a href="#" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <span id="nav-title"></span>
+            <ul id="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#apps">Apps</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="top">
+            <div>
+                <h2>SK App Development</h2>
+                <p>Explore the awsome apps now!</p>
+            </div>
+        </section>
+
+        <section class="container" id="apps">
+
+            <h3 class="primary-heading">My Apps</h3>
+
+            <div id="horizontal">
+                <div class="card" onclick="openApp('com.sachin.app.aos')">
+                    <img src="https://play-lh.googleusercontent.com/3Zg33C37NhgI26TD-isrDQOvai3meVDA3xMp8NhfqhtggOuBBdQFNxrOFVhiJkgzDA=s180-rw"
+                        alt="Always On Screen">
+
+                    <h1 class="cardTitle">Always On Screen</h1>
+                    <p class="cardDesc">Always On Screen app brings the always-on display feature to your device.</p>
+                </div>
+
+                <div class="card" onclick="openApp('com.sachin.app.whatsclean')">
+                    <img src="https://play-lh.googleusercontent.com/OP2hsPtM7uW908XvVT9ZYxdhnw1Q2aEC9wVBngzJ7La6WQoxhygWoYdh76bYBdh0Qnf8=s180-rw"
+                        alt="WhatsClean">
+
+                    <h1 class="cardTitle">WhatsClean</h1>
+                    <p class="cardDesc">Free up space by cleaning your WhatsApp media files such as photos, videos, gifs
+                        etc.</p>
+                </div>
+
+                <div class="card" onclick="openApp('com.sachin.app.appsaver')">
+                    <img src="https://play-lh.googleusercontent.com/TZdDPw0tP-7i9CVWW8WaI8DZabgguE6xhC8X3VIhJQzWN7l_YMLbTGnxxOa1n9J8lChE=s180-rw"
+                        alt="App Saver">
+
+                    <h1 class="cardTitle">App Saver</h1>
+                    <p class="cardDesc">This apps helps you to save your apps to sd card. Backup and share your apps
+                        offline.</p>
+                </div>
+
+                <div class="card" onclick="openApp('com.sachin.app.nightmode')">
+                    <img src="https://play-lh.googleusercontent.com/W6gOHmOD62dUyh2GDhKIrpcLSF6hxxFlK-aiHNxfMwfkHWhRDzEcQ1cWPnTsY8b5oKU=s180-rw"
+                        alt="Night Mode">
+
+                    <h1 class="cardTitle">Night Mode</h1>
+                    <p class="cardDesc">Night mode helps you lower the screen brightness and darken most of the google
+                        apps, social media apps.</p>
+                </div>
+
+        </section>
+
+        <section class="container" id="about">
+            <h3 class="primary-heading">About me</h3>
+
+            <div class="content" id="about-container">
+                <div>
+                    <p>
+                        I'm Sachin Kumar, an individual Android app developer from Bihar, India. I'm a
+                        first year student of Computer Science and Engineering. I'm very passionate about programming. I
+                        have learned coding by myself. I always wanted to create Android apps so Android development
+                        was the starting point for me. Java is the very first programming language that I have learnt. Now I have switched into Kotlin.</p>
+                    <br>
+                    <p>
+                        Along with Android development, I have learnt Web development and few programming languages also
+                        such as Python, Javascript, Php, C. 
+                        <br>
+                        I'm currently learning C++
+                    </p>
+                    <br>
+                </div>
+                <img id="photo" src="/image/me.png" alt="Myself">
+            </div>
+        </section>
+
+        <section class="container" id="contact">
+            <h3 class="primary-heading">Contact me</h3>
+            <p class="content">
+                Feel free to contact me anytime. <br>
+                <strong>Email me at: kr771.sachin@gmail.com</strong>
+            </p>
+            <br>
+            <p class="content">
+                To give any feedback about my apps<br>
+                <strong>Email at: feedbacks.sachin@gmail.com</strong>
+            </p>
+            <br>
+            <br>
+            <br>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; 2020-2021</p>
+        <a href="https://github.com/sachinkumar53" target="_blank" rel="noopener noreferrer">
+            |
+            <img src="/image/github.png" alt="Github Logo">
+            Github Profile
+        </a>
+    </footer>
+
+
+</body>
+<script src="./script/script.js"></script>
+
+</html>

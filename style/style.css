@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik&display=swap');
+
+:root{
+    --primaryColor: #2C3A47;
+    --colorOnPrimary: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    font-family: 'Nunito San', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+#navigation {
+    z-index: 10;
+    background-color: var(--primaryColor);
+    box-shadow: 0px 0.3em 0.5em rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+
+#nav-menu{
+    display: flex;
+    background-color: var(--primaryColor);
+}
+
+.nav-item{
+    list-style: none;
+    display: inline;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--colorOnPrimary);
+    margin: 0.2em 0.6em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover{
+    color: lightgray;
+}
+
+.nav-link.selected{
+    border-bottom: 2.5px solid var(--colorOnPrimary);
+}
+
+#hamburger {
+    display: none;
+    font-size: 22px;
+    color: var(--colorOnPrimary);
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#nav-title{
+    display: none;
+    color: var(--colorOnPrimary);
+}
+
+main{
+    min-height: calc(100vh - 9vh);
+}
+
+#top {
+    display: flex;
+    background: linear-gradient(90deg,rgba(24, 24, 24, 0.9) 30%,rgb(0,0,0,0)) 70%, url("https://source.unsplash.com/1024x500/?smartphone,apps") no-repeat center;
+    background-size: cover;
+    height: 50vh;
+}
+
+#top div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--colorOnPrimary);
+    width: 30vw;
+    margin-left: 10vw;
+}
+
+#top div h2{
+    margin: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#top div p{
+    margin: 10px;    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    width: 200px;
+    min-height: 200px;
+    margin: 0px 10px 16px 10px;
+    align-content: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#horizontal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardTitle{
+    color: #1e272e;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cardDesc{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: #485460;
+}
+
+
+.card img{
+    width: 108px;
+    height: 108px;
+    margin: 0  auto 10px auto;
+    border-radius: 16px;
+    
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container img{
+    height: 240px;
+    border-radius: 120px;
+    margin: 16px 5vw;
+}
+
+#about-container div{
+    flex: 1;
+}
+
+footer{
+    background-color:#1e272e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+    color: var(--colorOnPrimary);
+}
+
+footer p{
+    margin-right: 16px;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorOnPrimary);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a img{
+    width: 24px;
+    margin-left:16px;
+    margin-right: 8px;
+}
+
+/* Util classes */
+.primary-heading{
+    padding: 20px 8px;
+    color: var(--primaryColor);
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    padding: 0px 16px;
+}
+
+span{
+    font-family: 'Rubik', sans-serif;
+}
