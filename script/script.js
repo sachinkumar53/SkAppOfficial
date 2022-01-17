@@ -1,17 +1,23 @@
-document.getElementById('nav-title').innerText = document.title
+let nav_icons = Array.from(document.querySelectorAll('.icon'));
+let selected_index = 0;
 
-const nav = document.querySelector("#navigation");
-const title = document.querySelector("#nav-title");
-const navMenu = document.querySelector("#nav-menu");
-const hamburger = document.querySelector("#hamburger");
+console.log("navs: "+nav_icons.length)
+nav_icons.forEach(element=>{
+  element.addEventListener('click',(e)=>{
+    const index = nav_icons.indexOf(element)
+    select_icon(index);
+    // console.log("clicked: "+in);
+  })
+})
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-  nav.classList.toggle("active");
-  title.classList.toggle("active");
-  navMenu.classList.toggle("active");
-  hamburger.classList.toggle("active");
+function select_icon(i){
+  const selected = nav_icons[selected_index];
+  const next = nav_icons[i];
+  console.log("Before selected: "+selected.classList);
+  selected.classList.replace('material-icons','material-icons-outlined')
+  next.classList.replace('material-icons-outlined','material-icons')
+  selected_index = i;
+  console.log("After selected: "+selected.classList);
 }
 
 function openApp(pkgName) {
